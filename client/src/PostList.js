@@ -10,7 +10,7 @@ export default function PostList() {
     
     const fetchPosts = () => {
 
-        axios.get('http://localhost:4002/posts')
+        axios.get('http://posts.com/posts')
             .then((res) => {
                 console.log(res.data)
                 setPosts(res.data);
